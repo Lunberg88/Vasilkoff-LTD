@@ -1,0 +1,41 @@
+@import "mixin";
+
+@font-face {
+  font-family: 'Brandon Gratesque';
+  src: url('../assets/fonts/brandon_gratesque/brandon_reg-webfont.woff') format('woff'),
+  url('../assets/fonts/brandon_gratesque/brandon_reg-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Gratesque Medium';
+  src: url('../assets/fonts/brandon_gratesque/brandon_med-webfont.woff') format('woff'),
+  url('../assets/fonts/brandon_gratesque/brandon_med-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+@import "vars";
+@import "homepage";
+@import "fonts";
+

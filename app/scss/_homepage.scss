@@ -1,0 +1,260 @@
+/*
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+*/
+
+.footer {
+  background: #0f0f0f;
+  color: #fff;
+  padding: 10px 50px;
+
+  .foot-title {
+    font-size: 28px;
+    color: red;
+    font-family: 'Brandon Gratesque';
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .foot-copyrights {
+    color: #8c8c8c;
+    font-size: 14px;
+    vertical-align: bottom;
+
+    span {
+      vertical-align: bottom;
+    }
+  }
+
+  .social, .foot-contacts {
+    margin: 15px 0;
+
+    a, a:active, a:link, a:visited {
+      color: #fff;
+      font-size: 15px;
+      padding-right: 10px;
+      text-decoration: none;
+      font-family: 'Open Sans';
+    }
+    a:hover {
+      color: #8c8c8c;
+      text-decoration: none;
+    }
+  }
+
+  .fa-social {
+    a, a:active, a:visited, .a:link {
+      font-size: 20px !important;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin-left: -45px;
+
+    li {
+      font-size: 12px;
+      color: #fff;
+      padding: 5px 5px;
+
+      a {
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+header .navbar-collapse {
+  background: #fff;
+
+  .central-menu {
+    a:hover {
+      color: darkred;
+      &:before {
+        content: "";
+        position: absolute;
+        //top: 104%;
+        width: 0;
+        right: 0;
+        border-bottom: 3px solid darkred;
+        display: inline-block;
+        transition: all .2s ease-in-out;
+      }
+    }
+
+    .active a, .active a:link, .active a:visited {
+      background: #fff;
+    }
+
+    .active a:hover {
+      &:before {
+        content: " ";
+        position: absolute;
+        top: 104%;
+        width: 0;
+        right: 0;
+        border-bottom: 3px solid darkred;
+        display: inline-block;
+        transition: all .2s ease-in-out;
+      }
+    }
+  }
+}
+
+.navbar-brand img {
+  padding-top: 0;
+  margin: -15px auto;
+}
+
+
+
+@media (min-width: 700px) {
+  header .central-menu {
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 800px) {
+  header .central-menu {
+    margin-left: 25%;
+  }
+}
+
+
+
+.hp-top-head {
+  padding: 10px 50px 0;
+  background: linear-gradient(60deg, darkred, darkred 50%, red);
+
+  .clearfix {
+    padding-left: 0;
+  }
+
+  .top-head-box {
+    .head-logo {
+      position: relative;
+      left: 0;
+      float: left;
+      padding-top: 30px;
+      margin-left: 0;
+    }
+
+    .head-text {
+      float: left;
+      color: #fff;
+      padding: 95px 10px 0;
+      display: flex;
+      flex-direction: column;
+      font-weight: 400;
+      font-family: 'Brandon Gratesque';
+      line-height: 90px;
+
+      .small-text {
+        font-size: 16px;
+      }
+
+      .big-text {
+        text-transform: uppercase;
+        font-size: 36px;
+        line-height: 60px;
+      }
+
+      .link-btn {
+        padding-top: 45px;
+        text-transform: uppercase;
+        font-family: "Open Sans";
+
+        a, a:active, a:link, a:visited {
+          color: darkred;
+          padding: 15px 35px;
+          font-size: 14px;
+          border-radius: 60px;
+          background: #fff;
+          text-decoration: none;
+          img {
+            padding-left: 15px;
+          }
+        }
+
+        a:hover {
+          text-decoration: none;
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+.hp-expertise {
+  margin-top: 25px;
+
+  .exp-title {
+    font-size: 28px;
+    color: #0f0f0f;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-family: "Brandon Gratesque Medium";
+  }
+
+  .exp-view-more {
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+
+    a, a:active, a:link, a:visited {
+      background: #e7e7e7;
+      color: darkred;
+      font-size: 14px;
+      padding: 5px 15px;
+      border-radius: 60px;
+      text-decoration: none;
+
+      img {
+        padding-left: 15px;
+      }
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: red;
+
+      img {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .exp-img-box {
+    text-align: center;
+    padding: 10px 15px;
+
+    img {
+      height: 60px;
+    }
+  }
+
+  .exp-img-title {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Open Sans'
+  }
+
+  .exp-img-list {
+    padding: 10px 30px;
+    font-size: 13px;
+    opacity: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @media (max-width: 415px) {
+    .hp-expertise {
+      .exp-img-title {
+        padding: 10px 100px !important;
+      }
+    }
+  }
+}

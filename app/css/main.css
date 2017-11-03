@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'Brandon Gratesque';
+  src: url("../assets/fonts/brandon_gratesque/brandon_reg-webfont.woff") format("woff"), url("../assets/fonts/brandon_gratesque/brandon_reg-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Brandon Gratesque Medium';
+  src: url("../assets/fonts/brandon_gratesque/brandon_med-webfont.woff") format("woff"), url("../assets/fonts/brandon_gratesque/brandon_med-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 16px; }
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  background: #fff;
+  overflow-x: hidden; }
+
+img {
+  max-width: 100%; }
+
+/*
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+*/
+.footer {
+  background: #0f0f0f;
+  color: #fff;
+  padding: 10px 50px; }
+  .footer .foot-title {
+    font-size: 28px;
+    color: red;
+    font-family: 'Brandon Gratesque';
+    font-style: normal;
+    font-weight: 400; }
+  .footer .foot-copyrights {
+    color: #8c8c8c;
+    font-size: 14px;
+    vertical-align: bottom; }
+    .footer .foot-copyrights span {
+      vertical-align: bottom; }
+  .footer .social, .footer .foot-contacts {
+    margin: 15px 0; }
+    .footer .social a, .footer .social a:active, .footer .social a:link, .footer .social a:visited, .footer .foot-contacts a, .footer .foot-contacts a:active, .footer .foot-contacts a:link, .footer .foot-contacts a:visited {
+      color: #fff;
+      font-size: 15px;
+      padding-right: 10px;
+      text-decoration: none;
+      font-family: 'Open Sans'; }
+    .footer .social a:hover, .footer .foot-contacts a:hover {
+      color: #8c8c8c;
+      text-decoration: none; }
+  .footer .fa-social a, .footer .fa-social a:active, .footer .fa-social a:visited, .footer .fa-social .a:link {
+    font-size: 20px !important; }
+  .footer ul {
+    list-style: none;
+    margin-left: -45px; }
+    .footer ul li {
+      font-size: 12px;
+      color: #fff;
+      padding: 5px 5px; }
+      .footer ul li a {
+        font-weight: normal; }
+
+header .navbar-collapse {
+  background: #fff; }
+  header .navbar-collapse .central-menu a:hover {
+    color: darkred; }
+    header .navbar-collapse .central-menu a:hover:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      right: 0;
+      border-bottom: 3px solid darkred;
+      display: inline-block;
+      transition: all .2s ease-in-out; }
+  header .navbar-collapse .central-menu .active a, header .navbar-collapse .central-menu .active a:link, header .navbar-collapse .central-menu .active a:visited {
+    background: #fff; }
+  header .navbar-collapse .central-menu .active a:hover:before {
+    content: " ";
+    position: absolute;
+    top: 104%;
+    width: 0;
+    right: 0;
+    border-bottom: 3px solid darkred;
+    display: inline-block;
+    transition: all .2s ease-in-out; }
+
+.navbar-brand img {
+  padding-top: 0;
+  margin: -15px auto; }
+
+@media (min-width: 700px) {
+  header .central-menu {
+    margin-left: 15%; } }
+
+@media (min-width: 800px) {
+  header .central-menu {
+    margin-left: 25%; } }
+
+.hp-top-head {
+  padding: 10px 50px 0;
+  background: linear-gradient(60deg, darkred, darkred 50%, red); }
+  .hp-top-head .clearfix {
+    padding-left: 0; }
+  .hp-top-head .top-head-box .head-logo {
+    position: relative;
+    left: 0;
+    float: left;
+    padding-top: 30px;
+    margin-left: 0; }
+  .hp-top-head .top-head-box .head-text {
+    float: left;
+    color: #fff;
+    padding: 95px 10px 0;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-family: 'Brandon Gratesque';
+    line-height: 90px; }
+    .hp-top-head .top-head-box .head-text .small-text {
+      font-size: 16px; }
+    .hp-top-head .top-head-box .head-text .big-text {
+      text-transform: uppercase;
+      font-size: 36px;
+      line-height: 60px; }
+    .hp-top-head .top-head-box .head-text .link-btn {
+      padding-top: 45px;
+      text-transform: uppercase;
+      font-family: "Open Sans"; }
+      .hp-top-head .top-head-box .head-text .link-btn a, .hp-top-head .top-head-box .head-text .link-btn a:active, .hp-top-head .top-head-box .head-text .link-btn a:link, .hp-top-head .top-head-box .head-text .link-btn a:visited {
+        color: darkred;
+        padding: 15px 35px;
+        font-size: 14px;
+        border-radius: 60px;
+        background: #fff;
+        text-decoration: none; }
+        .hp-top-head .top-head-box .head-text .link-btn a img, .hp-top-head .top-head-box .head-text .link-btn a:active img, .hp-top-head .top-head-box .head-text .link-btn a:link img, .hp-top-head .top-head-box .head-text .link-btn a:visited img {
+          padding-left: 15px; }
+      .hp-top-head .top-head-box .head-text .link-btn a:hover {
+        text-decoration: none;
+        color: red; }
+
+.hp-expertise {
+  margin-top: 25px; }
+  .hp-expertise .exp-title {
+    font-size: 28px;
+    color: #0f0f0f;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-family: "Brandon Gratesque Medium"; }
+  .hp-expertise .exp-view-more {
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-family: 'Open Sans'; }
+    .hp-expertise .exp-view-more a, .hp-expertise .exp-view-more a:active, .hp-expertise .exp-view-more a:link, .hp-expertise .exp-view-more a:visited {
+      background: #e7e7e7;
+      color: darkred;
+      font-size: 14px;
+      padding: 5px 15px;
+      border-radius: 60px;
+      text-decoration: none; }
+      .hp-expertise .exp-view-more a img, .hp-expertise .exp-view-more a:active img, .hp-expertise .exp-view-more a:link img, .hp-expertise .exp-view-more a:visited img {
+        padding-left: 15px; }
+    .hp-expertise .exp-view-more a:hover {
+      text-decoration: none;
+      color: red; }
+      .hp-expertise .exp-view-more a:hover img {
+        opacity: 0.6; }
+  .hp-expertise .exp-img-box {
+    text-align: center;
+    padding: 10px 15px; }
+    .hp-expertise .exp-img-box img {
+      height: 60px; }
+  .hp-expertise .exp-img-title {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Open Sans'; }
+  .hp-expertise .exp-img-list {
+    padding: 10px 30px;
+    font-size: 13px;
+    opacity: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  @media (max-width: 415px) {
+    .hp-expertise .hp-expertise .exp-img-title {
+      padding: 10px 100px !important; } }
