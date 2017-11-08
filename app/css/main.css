@@ -26,12 +26,38 @@ body {
 img {
   max-width: 100%; }
 
-/*
-body {
-  min-height: 2000px;
-  padding-top: 70px;
-}
-*/
+@media (max-width: 415px) {
+  .hp-feedback .req-formbox {
+    padding: 5px 25px !important;
+    margin: 25px 20px !important; }
+  .hp-portfolio .box-down {
+    margin-bottom: 75px !important; }
+  .hp-portfolio .box-small {
+    margin-bottom: 125px !important; }
+  .hp-top-head .top-head-box .small-imgs-code {
+    top: 87% !important; }
+  .hp-top-head .top-head-box .small-imgs-android {
+    top: 100% !important;
+    right: 7% !important; }
+  .hp-top-head .top-head-box .small-imgs {
+    top: 110% !important;
+    left: -2% !important; } }
+
+.navbar-default {
+  background-color: #fff !important;
+  padding: 5px 0;
+  /*
+  .navbar-nav li a:hover {
+    border-top: 2px solid #b92c28;
+    border-bottom: 2px solid #b92c28;
+    opacity: 0.7;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  */ }
+
 .footer {
   background: #0f0f0f;
   color: #fff;
@@ -84,7 +110,8 @@ header .navbar-collapse {
       display: inline-block;
       transition: all .2s ease-in-out; }
   header .navbar-collapse .central-menu .active a, header .navbar-collapse .central-menu .active a:link, header .navbar-collapse .central-menu .active a:visited {
-    background: #fff; }
+    background: #fff;
+    color: #262626; }
   header .navbar-collapse .central-menu .active a:hover:before {
     content: " ";
     position: absolute;
@@ -101,7 +128,13 @@ header .navbar-collapse {
 
 @media (min-width: 700px) {
   header .central-menu {
-    margin-left: 15%; } }
+    margin-left: 15%; }
+  .hp-expertise .fleft-img {
+    text-align: justify !important; }
+    .hp-expertise .fleft-img img {
+      padding-left: 50px !important; }
+  .hp-expertise .fleft-list {
+    display: block !important; } }
 
 @media (min-width: 800px) {
   header .central-menu {
@@ -112,6 +145,52 @@ header .navbar-collapse {
   background: linear-gradient(60deg, darkred, darkred 50%, red); }
   .hp-top-head .clearfix {
     padding-left: 0; }
+  .hp-top-head .top-head-box .small-imgs, .hp-top-head .top-head-box .small-imgs-android,
+  .hp-top-head .top-head-box .small-imgs-code, .hp-top-head .top-head-box .small-imgs-python,
+  .hp-top-head .top-head-box .small-imgs-apple, .hp-top-head .top-head-box .small-imgs-android2,
+  .hp-top-head .top-head-box .small-imgs-code2, .hp-top-head .top-head-box .small-imgs2 {
+    position: absolute;
+    top: 15%;
+    right: 40%;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  .hp-top-head .top-head-box .small-imgs-android {
+    top: 45%;
+    right: 47%; }
+  .hp-top-head .top-head-box .small-imgs-code {
+    top: 16%;
+    right: 55%; }
+  .hp-top-head .top-head-box .small-imgs-python {
+    top: 60%;
+    right: 32%; }
+  .hp-top-head .top-head-box .small-imgs-apple {
+    top: 27%;
+    right: 30%; }
+  .hp-top-head .top-head-box .small-imgs-android2 {
+    top: 15%;
+    right: 5%; }
+  .hp-top-head .top-head-box .small-imgs2 {
+    top: 70%;
+    right: 3%; }
+  .hp-top-head .top-head-box .small-imgs-code2 {
+    top: 45%;
+    right: 6%; }
+  .hp-top-head .top-head-box .small-imgs:hover, .hp-top-head .top-head-box .small-imgs-android:hover,
+  .hp-top-head .top-head-box .small-imgs-code:hover, .hp-top-head .top-head-box .small-imgs-python:hover,
+  .hp-top-head .top-head-box .small-imgs-apple:hover, .hp-top-head .top-head-box .small-imgs-android2:hover,
+  .hp-top-head .top-head-box .small-imgs-code2:hover, .hp-top-head .top-head-box .small-imgs2:hover {
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -o-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    cursor: pointer; }
   .hp-top-head .top-head-box .head-logo {
     position: relative;
     left: 0;
@@ -150,42 +229,44 @@ header .navbar-collapse {
         text-decoration: none;
         color: red; }
 
-.hp-expertise {
+.hp-expertise, .hp-portfolio, .hp-feedback {
   margin-top: 25px; }
-  .hp-expertise .exp-title {
+  .hp-expertise .exp-title, .hp-portfolio .exp-title, .hp-feedback .exp-title {
     font-size: 28px;
     color: #0f0f0f;
     padding: 10px 0;
     text-transform: uppercase;
     font-family: "Brandon Gratesque Medium"; }
-  .hp-expertise .exp-view-more {
+  .hp-expertise .exp-view-more, .hp-portfolio .exp-view-more, .hp-feedback .exp-view-more {
     padding: 20px 0;
     text-transform: uppercase;
-    font-family: 'Open Sans'; }
-    .hp-expertise .exp-view-more a, .hp-expertise .exp-view-more a:active, .hp-expertise .exp-view-more a:link, .hp-expertise .exp-view-more a:visited {
+    font-family: 'Open Sans';
+    display: inline-table; }
+    .hp-expertise .exp-view-more a, .hp-expertise .exp-view-more a:active, .hp-expertise .exp-view-more a:link, .hp-expertise .exp-view-more a:visited, .hp-portfolio .exp-view-more a, .hp-portfolio .exp-view-more a:active, .hp-portfolio .exp-view-more a:link, .hp-portfolio .exp-view-more a:visited, .hp-feedback .exp-view-more a, .hp-feedback .exp-view-more a:active, .hp-feedback .exp-view-more a:link, .hp-feedback .exp-view-more a:visited {
       background: #e7e7e7;
       color: darkred;
       font-size: 14px;
       padding: 5px 15px;
       border-radius: 60px;
       text-decoration: none; }
-      .hp-expertise .exp-view-more a img, .hp-expertise .exp-view-more a:active img, .hp-expertise .exp-view-more a:link img, .hp-expertise .exp-view-more a:visited img {
-        padding-left: 15px; }
-    .hp-expertise .exp-view-more a:hover {
+      .hp-expertise .exp-view-more a img, .hp-expertise .exp-view-more a:active img, .hp-expertise .exp-view-more a:link img, .hp-expertise .exp-view-more a:visited img, .hp-portfolio .exp-view-more a img, .hp-portfolio .exp-view-more a:active img, .hp-portfolio .exp-view-more a:link img, .hp-portfolio .exp-view-more a:visited img, .hp-feedback .exp-view-more a img, .hp-feedback .exp-view-more a:active img, .hp-feedback .exp-view-more a:link img, .hp-feedback .exp-view-more a:visited img {
+        padding-left: 15px;
+        padding-bottom: 3px; }
+    .hp-expertise .exp-view-more a:hover, .hp-portfolio .exp-view-more a:hover, .hp-feedback .exp-view-more a:hover {
       text-decoration: none;
       color: red; }
-      .hp-expertise .exp-view-more a:hover img {
+      .hp-expertise .exp-view-more a:hover img, .hp-portfolio .exp-view-more a:hover img, .hp-feedback .exp-view-more a:hover img {
         opacity: 0.6; }
-  .hp-expertise .exp-img-box {
+  .hp-expertise .exp-img-box, .hp-portfolio .exp-img-box, .hp-feedback .exp-img-box {
     text-align: center;
     padding: 10px 15px; }
-    .hp-expertise .exp-img-box img {
+    .hp-expertise .exp-img-box img, .hp-portfolio .exp-img-box img, .hp-feedback .exp-img-box img {
       height: 60px; }
-  .hp-expertise .exp-img-title {
+  .hp-expertise .exp-img-title, .hp-portfolio .exp-img-title, .hp-feedback .exp-img-title {
     text-align: center;
     font-size: 24px;
     font-family: 'Open Sans'; }
-  .hp-expertise .exp-img-list {
+  .hp-expertise .exp-img-list, .hp-portfolio .exp-img-list, .hp-feedback .exp-img-list {
     padding: 10px 30px;
     font-size: 13px;
     opacity: 0.5;
@@ -193,5 +274,152 @@ header .navbar-collapse {
     flex-direction: row;
     justify-content: center; }
   @media (max-width: 415px) {
-    .hp-expertise .hp-expertise .exp-img-title {
+    .hp-expertise .hp-expertise .exp-img-title, .hp-portfolio .hp-expertise .exp-img-title, .hp-feedback .hp-expertise .exp-img-title {
       padding: 10px 100px !important; } }
+
+.hp-portfolio {
+  margin-bottom: 35px; }
+  .hp-portfolio .exmpty-sq {
+    margin: 45px auto; }
+  .hp-portfolio .pf-box {
+    position: relative;
+    margin: 10px auto 15px;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+    .hp-portfolio .pf-box .img-logo1 {
+      position: absolute;
+      width: 85%;
+      top: 35%;
+      left: 10%;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      z-index: 99; }
+    .hp-portfolio .pf-box .ehover12 .img-responsive {
+      width: 380px;
+      height: 320px;
+      -webkit-filter: blur(3px);
+      filter: blur(3px) grayscale(100%); }
+    .hp-portfolio .pf-box .ehover12 img {
+      transition: none;
+      transform: none;
+      object-fit: cover; }
+    .hp-portfolio .pf-box .ehover12:hover {
+      background: red; }
+      .hp-portfolio .pf-box .ehover12:hover .img-responsive {
+        -webkit-filter: blur(0px);
+        filter: blur(0px) grayscale(0%); }
+      .hp-portfolio .pf-box .ehover12:hover .img-logo1 {
+        opacity: 1;
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%); }
+    .hp-portfolio .pf-box .pf-box-title {
+      font-family: 'Open Sans' !important;
+      font-size: 26px !important;
+      padding: 10px 0 !important; }
+      .hp-portfolio .pf-box .pf-box-title .title-text-pf {
+        color: #262626 !important; }
+      .hp-portfolio .pf-box .pf-box-title .title-border {
+        width: 90px;
+        height: 6px;
+        background: #c40000;
+        margin-top: 16px; }
+  .hp-portfolio .pf-box:hover, .hp-portfolio .box-down {
+    position: relative;
+    -o-transform: translateY(25px);
+    -ms-transform: translateY(25px);
+    -moz-transform: translateY(25px);
+    -webkit-transform: translateY(25px);
+    transform: translateY(25px); }
+  .hp-portfolio .box-small {
+    height: 270px;
+    top: 50px; }
+    .hp-portfolio .box-small .img-logo1 {
+      width: 65%;
+      top: 20%;
+      left: 10%;
+      filter: grayscale(50%); }
+
+.hp-feedback {
+  margin: 60px auto; }
+  .hp-feedback .exp-title {
+    font-family: "Brandon Gratesque"; }
+  .hp-feedback .req-formbox {
+    margin-top: 15px;
+    margin-left: -25px;
+    text-align: center; }
+    .hp-feedback .req-formbox input {
+      display: list-item;
+      width: 100%;
+      margin: 35px 0;
+      border: 0;
+      padding: 10px 5px;
+      border-bottom: 1px solid #b9b9b9; }
+      .hp-feedback .req-formbox input:focus {
+        border: 0; }
+    .hp-feedback .req-formbox input:first-child {
+      margin-top: -20px; }
+    .hp-feedback .req-formbox a, .hp-feedback .req-formbox a:active, .hp-feedback .req-formbox a:link, .hp-feedback .req-formbox a:visited {
+      padding: 6px 60px;
+      background: #c00000;
+      border-radius: 60px;
+      color: #fff;
+      font-family: 'Brandon Gratesque Medium';
+      font-size: 15px;
+      text-transform: uppercase;
+      text-decoration: none; }
+    .hp-feedback .req-formbox a:hover {
+      background: red;
+      text-decoration: none; }
+
+.hover {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center; }
+
+.ehover12 {
+  background: #646464; }
+  .ehover12 img {
+    max-width: none;
+    -webkit-transition: opacity .35s,-webkit-transform .35s;
+    transition: opacity .35s,transform .35s;
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .ehover12:hover img {
+    opacity: .4;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  .ehover12 h2 {
+    position: relative;
+    overflow: hidden;
+    padding: .5em 0;
+    background-color: transparent; }
+    .ehover12 h2::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      -webkit-transition: -webkit-transform .35s;
+      transition: transform .35s;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0); }
+  .ehover12:hover h2::after {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  .ehover12 button {
+    color: #FFF;
+    opacity: 0;
+    -webkit-transition: opacity .35s,-webkit-transform .35s;
+    transition: opacity .35s,transform .35s;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  .ehover12:hover button {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
