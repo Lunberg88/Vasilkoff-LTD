@@ -1,34 +1,4 @@
-@font-face {
-  font-family: 'Brandon Gratesque';
-  src: url("../assets/fonts/brandon_gratesque/brandon_reg-webfont.woff") format("woff"), url("../assets/fonts/brandon_gratesque/brandon_reg-webfont.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Brandon Gratesque Medium';
-  src: url("../assets/fonts/brandon_gratesque/brandon_med-webfont.woff") format("woff"), url("../assets/fonts/brandon_gratesque/brandon_med-webfont.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal; }
-
-html {
-  height: 100%;
-  width: 100%;
-  font-size: 16px; }
-
-body {
-  height: 100%;
-  width: 100%;
-  font-family: 'Open Sans', sans-serif;
-  color: #000;
-  background: #fff;
-  overflow-x: hidden; }
-
-img {
-  max-width: 100%; }
-
 @media (max-width: 415px) {
-  .exp-top-head {
-    background-position-x: -270px !important; }
   .hp-feedback .req-formbox {
     padding: 5px 25px !important;
     margin: 25px 20px !important; }
@@ -47,7 +17,18 @@ img {
 
 .navbar-default {
   background-color: #fff !important;
-  padding: 5px 0; }
+  padding: 5px 0;
+  /*
+  .navbar-nav li a:hover {
+    border-top: 2px solid #b92c28;
+    border-bottom: 2px solid #b92c28;
+    opacity: 0.7;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  */ }
 
 .footer {
   background: #0f0f0f;
@@ -143,10 +124,10 @@ header .navbar-collapse {
     position: absolute;
     top: 15%;
     right: 40%;
-    -o-transition: all 1.5s ease-in-out;
-    -moz-transition: all 1.5s ease-in-out;
-    -webkit-transition: all 1.5s ease-in-out;
-    transition: all 1.5s ease-in-out; }
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
   .hp-top-head .top-head-box .small-imgs-android {
     top: 45%;
     right: 47%; }
@@ -414,56 +395,3 @@ header .navbar-collapse {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
-
-.exp-top-head {
-  background: url("../assets/img/expertise-logo.png") no-repeat;
-  background-size: cover;
-  background-position-y: 40px; }
-  .exp-top-head .exp-logo-txt {
-    text-align: center;
-    color: #fff;
-    font-family: "Brandon Gratesque";
-    font-size: 46px;
-    padding: 70px 0 0;
-    text-transform: uppercase;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 320px;
-    margin: auto; }
-
-.breadcrumb-main {
-  width: 100%;
-  text-align: center;
-  padding: 5px 0;
-  box-shadow: 0 3px 3px rgba(153, 153, 153, 0.5); }
-  .breadcrumb-main .breadcrumbs ul {
-    list-style: none; }
-    .breadcrumb-main .breadcrumbs ul li {
-      display: inline-block; }
-
-.exp-content {
-  padding: 30px 50px; }
-  .exp-content .exp-box {
-    margin: 40px auto;
-    width: 76%; }
-    .exp-content .exp-box ul li {
-      font-family: "Open Sans";
-      font-size: 14px;
-      opacity: 0.6; }
-    .exp-content .exp-box .box-img, .exp-content .exp-box .box-text {
-      display: inline-block; }
-    .exp-content .exp-box .box-text {
-      padding-left: 10px; }
-    .exp-content .exp-box .box-img {
-      vertical-align: top;
-      margin-bottom: 30px; }
-    .exp-content .exp-box .box-text {
-      margin: -20px; }
-      .exp-content .exp-box .box-text h3 {
-        padding-left: 20px; }
-    .exp-content .exp-box .box-desc {
-      opacity: 0.6;
-      line-height: 16px; }

@@ -1,4 +1,8 @@
 @media (max-width: 415px) {
+  .exp-top-head {
+    background-position-x: -270px !important;
+  }
+
   .hp-feedback {
     .req-formbox {
       padding: 5px 25px !important;
@@ -38,17 +42,6 @@
 .navbar-default {
   background-color: #fff !important;
   padding: 5px 0;
-  /*
-  .navbar-nav li a:hover {
-    border-top: 2px solid #b92c28;
-    border-bottom: 2px solid #b92c28;
-    opacity: 0.7;
-    -o-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  */
 }
 
 .footer {
@@ -202,10 +195,10 @@ header .navbar-collapse {
       position: absolute;
       top: 15%;
       right: 40%;
-      -o-transition: all 0.5s ease-in-out;
-      -moz-transition: all 0.5s ease-in-out;
-      -webkit-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out;
+      -o-transition: all 1.5s ease-in-out;
+      -moz-transition: all 1.5s ease-in-out;
+      -webkit-transition: all 1.5s ease-in-out;
+      transition: all 1.5s ease-in-out;
     }
 
     .small-imgs-android {
