@@ -45,6 +45,13 @@ img {
     top: 110% !important;
     left: -2% !important; } }
 
+@media (min-width: 1200px) {
+  .footer .foot-box {
+    margin: auto !important;
+    padding-left: 60px !important; }
+  .footer .foot-box:last-child {
+    padding-left: 100px !important; } }
+
 .navbar-default {
   background-color: #fff !important;
   padding: 5px 0; }
@@ -55,7 +62,7 @@ img {
   padding: 10px 50px; }
   .footer .foot-title {
     font-size: 28px;
-    color: red;
+    color: #B0333A;
     font-family: 'Brandon Gratesque';
     font-style: normal;
     font-weight: 400; }
@@ -90,20 +97,13 @@ img {
 
 header .navbar-collapse {
   background: #fff; }
-  header .navbar-collapse .central-menu a:hover {
-    color: darkred; }
-    header .navbar-collapse .central-menu a:hover:before {
-      content: "";
-      position: absolute;
-      width: 0;
-      right: 0;
-      border-bottom: 3px solid darkred;
-      display: inline-block;
-      transition: all .2s ease-in-out; }
-  header .navbar-collapse .central-menu .active a, header .navbar-collapse .central-menu .active a:link, header .navbar-collapse .central-menu .active a:visited {
+  header .navbar-collapse .central-menu a:hover, header .navbar-collapse .navbar-nav a:hover {
+    color: darkred;
+    border-top: 1px solid #b92c28; }
+  header .navbar-collapse .central-menu .active a, header .navbar-collapse .central-menu .active a:link, header .navbar-collapse .central-menu .active a:visited, header .navbar-collapse .navbar-nav .active a, header .navbar-collapse .navbar-nav .active a:link, header .navbar-collapse .navbar-nav .active a:visited {
     background: #fff;
     color: #262626; }
-  header .navbar-collapse .central-menu .active a:hover:before {
+  header .navbar-collapse .central-menu .active a:hover:before, header .navbar-collapse .navbar-nav .active a:hover:before {
     content: " ";
     position: absolute;
     top: 104%;
@@ -352,8 +352,8 @@ header .navbar-collapse {
     .hp-feedback .req-formbox input:first-child {
       margin-top: -20px; }
     .hp-feedback .req-formbox a, .hp-feedback .req-formbox a:active, .hp-feedback .req-formbox a:link, .hp-feedback .req-formbox a:visited {
-      padding: 6px 60px;
-      background: #c00000;
+      padding: 12px 50px;
+      background: #B0333A;
       border-radius: 60px;
       color: #fff;
       font-family: 'Brandon Gratesque Medium';
@@ -361,7 +361,7 @@ header .navbar-collapse {
       text-transform: uppercase;
       text-decoration: none; }
     .hp-feedback .req-formbox a:hover {
-      background: red;
+      background: #b80000;
       text-decoration: none; }
 
 .hover {
@@ -439,13 +439,28 @@ header .navbar-collapse {
   text-align: center;
   padding: 5px 0;
   box-shadow: 0 3px 3px rgba(153, 153, 153, 0.5); }
-  .breadcrumb-main .breadcrumbs ul {
-    list-style: none; }
-    .breadcrumb-main .breadcrumbs ul li {
-      display: inline-block; }
+  .breadcrumb-main .breadcrumbs {
+    width: 100%; }
+    .breadcrumb-main .breadcrumbs ul {
+      list-style: none;
+      padding-top: 8px; }
+      .breadcrumb-main .breadcrumbs ul li {
+        display: inline-block;
+        padding-right: 15px; }
+        .breadcrumb-main .breadcrumbs ul li i {
+          color: #9d9d9d; }
+      .breadcrumb-main .breadcrumbs ul li:first-child a, .breadcrumb-main .breadcrumbs ul li:first-child a:active, .breadcrumb-main .breadcrumbs ul li:first-child a:visited, .breadcrumb-main .breadcrumbs ul li:first-child a:link {
+        font-size: 13px;
+        text-decoration: underline;
+        color: #9d9d9d;
+        padding-right: 15px; }
+      .breadcrumb-main .breadcrumbs ul li:last-child {
+        color: #262626; }
 
 .exp-content {
-  padding: 30px 50px; }
+  margin-top: 3px;
+  padding: 30px 50px;
+  background: #f9f9f9; }
   .exp-content .exp-box {
     margin: 40px auto;
     width: 76%; }

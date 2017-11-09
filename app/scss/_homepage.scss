@@ -39,6 +39,19 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .footer {
+    .foot-box {
+      margin: auto !important;
+      padding-left: 60px !important;
+    }
+
+    .foot-box:last-child {
+      padding-left: 100px !important;
+    }
+  }
+}
+
 .navbar-default {
   background-color: #fff !important;
   padding: 5px 0;
@@ -51,7 +64,7 @@
 
   .foot-title {
     font-size: 28px;
-    color: red;
+    color: #B0333A;
     font-family: 'Brandon Gratesque';
     font-style: normal;
     font-weight: 400;
@@ -108,19 +121,10 @@
 header .navbar-collapse {
   background: #fff;
 
-  .central-menu {
+  .central-menu, .navbar-nav {
     a:hover {
       color: darkred;
-      &:before {
-        content: "";
-        position: absolute;
-        //top: 104%;
-        width: 0;
-        right: 0;
-        border-bottom: 3px solid darkred;
-        display: inline-block;
-        transition: all .2s ease-in-out;
-      }
+      border-top: 1px solid #b92c28;
     }
 
     .active a, .active a:link, .active a:visited {
@@ -505,8 +509,8 @@ header .navbar-collapse {
     }
 
     a, a:active, a:link, a:visited {
-      padding: 6px 60px;
-      background: #c00000;
+      padding: 12px 50px;
+      background: #B0333A;
       border-radius: 60px;
       color: #fff;
       font-family: 'Brandon Gratesque Medium';
@@ -516,7 +520,7 @@ header .navbar-collapse {
     }
 
     a:hover {
-      background: red;
+      background: #b80000;
       text-decoration: none;
     }
   }

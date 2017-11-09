@@ -27,19 +27,40 @@
   box-shadow: 0 3px 3px rgba(153, 153, 153, 0.5);
 
   .breadcrumbs {
+    width: 100%;
 
     ul {
       list-style: none;
+      padding-top: 8px;
 
       li {
         display: inline-block;
+        padding-right: 15px;
+
+        i {
+          color: #9d9d9d;
+        }
+      }
+
+      li:first-child a, li:first-child a:active, li:first-child a:visited, li:first-child a:link {
+        font-size: 13px;
+        text-decoration: underline;
+        color: #9d9d9d;
+        padding-right: 15px;
+      }
+
+      li:last-child {
+        color: #262626;
       }
     }
   }
 }
 
 .exp-content {
+  margin-top: 3px;
   padding: 30px 50px;
+  background: #f9f9f9;
+
   .exp-box {
     margin: 40px auto;
     width: 76%;
