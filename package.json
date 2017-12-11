@@ -1,7 +1,7 @@
 {
-  "name": "walkingcure",
+  "name": "vasilkoff-site",
   "version": "1.0.0",
-  "author": "Vasya Ponomarenko",
+  "author": "Lunberg88",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.12",

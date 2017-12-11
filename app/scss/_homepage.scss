@@ -37,10 +37,37 @@
       }
     }
   }
+  .hp-portfolio {
+    .pf-box {
+      padding-bottom: 50px;
+      .pf-box-title {
+        .title-border {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.hp-expertise .exp-view-more, .hp-portfolio .exp-view-more {
+    padding-left: 20px;
 }
 
 @media (min-width: 1200px) {
   .footer {
+    .container .row .col-md-4 .left-box {
+      padding-left: 0px !important;
+      height: 240px;
+
+      .foot-copyrights {
+        color: #5b5b5b;
+        font-size: 14px;
+        vertical-align: bottom;
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+      }
+    }
     .foot-box {
       margin: auto !important;
       padding-left: 60px !important;
@@ -64,20 +91,16 @@
 
   .foot-title {
     font-size: 28px;
-    color: #B0333A;
+    color: $dark-red;
     font-family: 'Brandon Gratesque';
     font-style: normal;
     font-weight: 400;
   }
 
   .foot-copyrights {
-    color: #8c8c8c;
+    color: #5b5b5b;
     font-size: 14px;
     vertical-align: bottom;
-
-    span {
-      vertical-align: bottom;
-    }
   }
 
   .social, .foot-contacts {
@@ -118,13 +141,25 @@
   }
 }
 
+header .navbar-default .navbar-nav > li > a {
+  color: #262626;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+header .navbar-default .navbar-nav > li > a.active {
+  color: $dark-red;
+  text-decoration: none;
+}
+
 header .navbar-collapse {
   background: #fff;
 
   .central-menu, .navbar-nav {
     a:hover {
-      color: darkred;
-      border-top: 1px solid #b92c28;
+      color: $dark-red;
     }
 
     .active a, .active a:link, .active a:visited {
@@ -174,6 +209,26 @@ header .navbar-collapse {
   }
 }
 
+@media screen and (min-width: 760px) and (max-width: 1200px) {
+  .hp-portfolio {
+    .pf-box {
+      padding-bottom: 105px;
+    }
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .hp-portfolio {
+    .pf-box {
+      .pf-box-title {
+        .title-border {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 800px) {
   header .central-menu {
     margin-left: 25%;
@@ -184,7 +239,7 @@ header .navbar-collapse {
 
 .hp-top-head {
   padding: 10px 50px 0;
-  background: linear-gradient(60deg, darkred, darkred 50%, red);
+  background: linear-gradient(60deg, $dark-red, $dark-red 50%, #95241A);
 
   .clearfix {
     padding-left: 0;
@@ -290,14 +345,15 @@ header .navbar-collapse {
         font-family: "Open Sans";
 
         a, a:active, a:link, a:visited {
-          color: darkred;
-          padding: 15px 35px;
+          color: $dark-red;
+          padding: 8px 35px;
           font-size: 14px;
           border-radius: 60px;
           background: #fff;
           text-decoration: none;
           img {
             padding-left: 15px;
+            padding-bottom: 2px;
           }
         }
 
@@ -310,21 +366,36 @@ header .navbar-collapse {
   }
 }
 
+.hp-top-head .carousel .carousel-inner .item, .hp-top-head .carousel .carousel-inner .item .active {
+  width: 100%;
+  height: 500px;
+}
+
+.hp-top-head .carousel .carousel-inner .item, .hp-top-head .carousel .carousel-inner .item .active {
+  .head-logo {
+    position: relative;
+    left: 0;
+    float: left;
+    padding-top: 30px;
+    margin-left: 0;
+  }
+}
+
 .hp-expertise, .hp-portfolio, .hp-feedback {
-  margin-top: 25px;
+  margin-top: 45px;
 
   .exp-title {
     font-size: 28px;
     color: #0f0f0f;
     padding: 10px 0;
     text-transform: uppercase;
-    font-family: "Brandon Gratesque Medium";
+    font-family: "Brandon Gratesque";
   }
 
   .exp-view-more {
     padding: 20px 0;
     text-transform: uppercase;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     display: inline-table;
 
     a, a:active, a:link, a:visited {
@@ -363,7 +434,7 @@ header .navbar-collapse {
   .exp-img-title {
     text-align: center;
     font-size: 24px;
-    font-family: 'Open Sans'
+    font-family: 'Open Sans', sans-serif;
   }
 
   .exp-img-list {
@@ -384,7 +455,7 @@ header .navbar-collapse {
   }
 }
 
-.hp-portfolio {
+.hp-portfolio, .exp-content {
   margin-bottom: 35px;
 
   .exmpty-sq {
@@ -399,7 +470,7 @@ header .navbar-collapse {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 
-    .img-logo1 {
+    .img-logo1, .img-sm {
       position: absolute;
       width: 85%;
       top: 35%;
@@ -409,12 +480,17 @@ header .navbar-collapse {
       z-index: 99;
     }
 
+    .img-sm {
+      width: 160px !important;
+      left: 20% !important;
+    }
+
     .ehover12 {
       .img-responsive {
         width: 380px;
         height: 320px;
-        -webkit-filter: blur(3px);
-        filter: blur(3px) grayscale(100%);
+        filter: grayscale(100%);
+        opacity: 0.7;
       }
     }
 
@@ -425,9 +501,8 @@ header .navbar-collapse {
     }
 
     .ehover12:hover {
-      background: rgb(255,0,0);
-
       .img-responsive {
+        opacity: 1;
         -webkit-filter: blur(0px);
         filter: blur(0px) grayscale(0%)
       }
@@ -440,7 +515,7 @@ header .navbar-collapse {
     }
 
     .pf-box-title {
-      font-family: 'Open Sans' !important;
+      font-family: 'Open Sans', sans-serif !important;
       font-size: 26px !important;
       padding: 10px 0 !important;
 
@@ -450,36 +525,19 @@ header .navbar-collapse {
 
       .title-border {
         width: 90px;
-        height: 6px;
-        background: #c40000;
-        margin-top: 16px;
+        height: 2px;
+        background: $dark-red;
+        margin-top: 19px;
       }
     }
   }
 
-  .pf-box:hover, .box-down {
-    position: relative;
-    -o-transform: translateY(25px);
-    -ms-transform: translateY(25px);
-    -moz-transform: translateY(25px);
-    -webkit-transform: translateY(25px);
-    transform: translateY(25px);
-  }
-
-  .box-small {
-    height: 270px;
-    top: 50px;
-
-    .img-logo1 {
-      width:65%;
-      top: 20%;
-      left: 10%;
-      filter: grayscale(50%);
-    }
+   .pf-box:hover {
+     cursor: pointer;
   }
 }
 
-.hp-feedback {
+.hp-feedback, .google-map {
   margin: 60px auto;
 
   .exp-title {
@@ -510,7 +568,7 @@ header .navbar-collapse {
 
     a, a:active, a:link, a:visited {
       padding: 12px 50px;
-      background: #B0333A;
+      background: $dark-red;
       border-radius: 60px;
       color: #fff;
       font-family: 'Brandon Gratesque Medium';

@@ -1,0 +1,139 @@
+@media (max-width: 370px) {
+  .pad-zero .side-right .product-content .align-center .product-preview {
+    a {
+      font-size: 14px !important;
+    }
+  }
+}
+@media (max-width: 1025px) {
+  .pad-zero .side {
+    position: relative !important;
+    width: 100% !important;
+  }
+  .pad-zero .side.side-left {
+    padding-top: 80px;
+    padding-bottom: 47px;
+    height: 50vh;
+  }
+  .pad-zero .side.side-right .counter-content {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+  .pad-zero .side-right .product-content {
+    padding-top: 10% !important;
+  }
+
+  .my-arrow {
+    bottom: calc(100% / 2 - 38px) !important;
+  }
+}
+
+.pad-zero {
+  padding: 0;
+
+  .splitlayout {
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100%;
+    width: 100%;
+  }
+
+  .side {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .side-left {
+    left: 0;
+    background: url('../assets/img/ben-kolde-365811.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+
+  .side-right {
+    color: #000;
+    background: #fff;
+    right: 0;
+    overflow: hidden;
+
+    .product-content {
+      padding-top: 40%;
+
+      .align-center {
+        overflow: hidden;
+        clear: both;
+        float: none;
+        margin: 0 auto;
+      }
+
+      .text-left {
+        text-align: left;
+      }
+    }
+
+    .product-content .align-center .product-title-header {
+      padding: 15px 0 0;
+      font-family: "Brandon Gratesque";
+      font-size: 54px;
+      color: $dark-red;
+      text-transform: uppercase;
+    }
+
+    .product-content .align-center .header-line {
+      width: 30%;
+      height: 1px;
+      float: left;
+      background: $dark-red;
+    }
+
+    .product-content .align-center .product-desc {
+      margin: 50px auto 10px;
+      padding: 8px auto;
+      font-size: 15px;
+      color: #5e5e5e;
+    }
+
+    .product-content .align-center .product-preview {
+      margin: 10% auto 15%;
+      a, a:active, a:link, a:visited {
+        color: $dark-red;
+        padding: 9px 25px;
+        font-size: 20px;
+        border: 1px solid $dark-red;
+        border-radius: 40px;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+      a:hover {
+        background: #f3f3f3;
+        text-decoration: none;
+      }
+      img {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+.my-arrow {
+  background: #fff;
+  box-shadow: 0 5px 5px rgba(51, 51, 51, 0.24);
+  padding: 25px 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 17%;
+  right: calc(100% / 2 - 38px);
+  z-index: 999 !important;
+  &:hover {
+    cursor: pointer;
+  }
+}

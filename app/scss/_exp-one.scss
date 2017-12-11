@@ -1,0 +1,105 @@
+@media screen and (max-width: 1199px) {
+  .exp-content .pf-box .pf-box-title .title-border {
+    height: 0;
+  }
+}
+
+@media (width: 768px) {
+  .exp-mob-apps {
+    li {
+      width: 17%;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .exp-mob-apps {
+    li {
+      width: 18%;
+    }
+  }
+}
+
+@media (min-width: 450px) {
+  .exp-mob-apps li {
+    width: 24%;
+  }
+}
+
+.exp-content {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  .exp-one-title, .exp-one-about, .exp-one-mobile, .exp-one-projects {
+    color: #262626;
+    font-family: "Brandon Gratesque";
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+
+  .exp-one-desc-box {
+    margin: 15px auto 40px;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .exp-one-desc-box .desc-box-top {
+    color: $dark-red;
+    font-family: "Brandon Gratesque";
+    font-size: 96px;
+    text-transform: uppercase;
+  }
+
+  .exp-one-desc-box .desc-box-bottom {
+    color: #262626;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .exp-one-about-text {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: #888888;
+    padding-bottom: 15px;
+  }
+
+  .exp-mob-apps {
+    list-style: none;
+    margin: 30px auto 0;
+    padding: 10px 0;
+    text-align: center;
+    li {
+      display: inline-block;
+      font-size: 15px;
+      color: #5e5e5e;
+      padding: 30px 30px;
+      p {
+        padding-top: 10px;
+        margin-bottom: 0;
+      }
+    }
+
+    li > img {
+      width: 35px;
+    }
+
+    li p:last-child {
+      padding: 0;
+    }
+  }
+
+  .exp-one-projects {
+    margin-bottom: 20px;
+  }
+}
+
+.exp-one {
+  background: #fff;
+}
+
+.exp-bot {
+  padding-bottom: 40px !important;
+}
+
+.exp-fd {
+  margin-top: 35px;
+}

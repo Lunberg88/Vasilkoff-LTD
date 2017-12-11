@@ -1,0 +1,83 @@
+@media (max-width: 380px) {
+  .google-map .google-map-contacts {
+    width: 85%;
+    margin: auto;
+    left: 0;
+  }
+}
+@media (max-width: 450px) {
+  .google-map .google-map-contacts {
+    left: 10%;
+  }
+}
+
+.google-map {
+  margin: 0;
+}
+
+.google-map-contacts {
+  position: absolute;
+  width: 350px;
+  top: 130px;
+  left: 250px;
+  z-index: 99;
+}
+
+.google-map .google-map-contacts .contact-info {
+  font-size: 16px;
+  color: $dark-red;
+  margin: 15px auto 40px;
+  line-height: 40px;
+  i {
+    font-size: 19px;
+    padding-right: 10px;
+  }
+}
+
+.google-map .google-map-contacts .contact-us {
+
+  border: 1px solid #f7f7f7;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  padding: 15px 20px;
+  margin-top: 0;
+  background: #ededed;
+
+  .frm-box {
+    input {
+      margin: 5px 0;
+      background: #ededed;
+      &::placeholder {
+        color: #3c3c3c;
+      }
+      &:focus {
+        outline: 0;
+        border-bottom: 1px solid $dark-red;
+      }
+    }
+
+    input:first-child {
+      margin-top: 0;
+    }
+
+    input:last-child {
+      margin-bottom: 35px !important;
+    }
+
+    .frm-btn {
+      padding: 7px 65px !important;
+      font-size: 16px;
+    }
+  }
+
+  .request-title {
+    margin: 15px auto;
+    font-size: 18px;
+    font-family: "Brandon Gratesque Medium";
+    text-transform: uppercase;
+    color: #5e5e5e;
+  }
+}
+
+.google-map-header, .product-view-header {
+  box-shadow: 0 0 6px rgba(0,0,0,.3);
+}

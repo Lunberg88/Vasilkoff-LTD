@@ -1,9 +1,9 @@
 {
-  "name": "walkingcure",
+  "name": "vasilkoff-site",
   "description": "",
   "main": "index.js",
   "authors": [
-    "Vasya Ponomarenko"
+    "Lunberg88"
   ],
   "license": "ISC",
   "dependencies": {
