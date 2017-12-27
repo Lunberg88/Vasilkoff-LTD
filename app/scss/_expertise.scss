@@ -19,18 +19,28 @@
     margin: auto;
   }
 }
-
+.exp-about{
+    background: #f9f9f9;
+}
 .breadcrumb-main {
   width: 100%;
-  text-align: center;
   padding: 5px 0;
-  box-shadow: 0 3px 3px rgba(153, 153, 153, 0.5);
-
+  color: #9d9d9d;
+  .icon-arrow{
+      margin-right: 10px;
+      font-size: 20px;
+      vertical-align: middle;
+  }
+  .black{
+      color: #232323;
+      font-size: 11px;
+  }
   .breadcrumbs {
     width: 100%;
 
     ul {
       list-style: none;
+      padding: 0;
       padding-top: 8px;
 
       li {
@@ -43,14 +53,9 @@
       }
 
       li a, li a:active, li a:visited, li a:link {
-        font-size: 13px;
-        text-decoration: underline;
+        font-size: 14px;
         color: #9d9d9d;
         padding-right: 15px;
-      }
-
-      li:last-child {
-        color: #262626;
       }
     }
   }
@@ -59,7 +64,7 @@
 .exp-content {
   margin-top: 3px;
   padding: 30px 50px;
-  background: #f9f9f9;
+
 
   .exp-box {
     margin: 40px auto;
@@ -98,4 +103,38 @@
       line-height: 16px;
     }
   }
+}
+.we-provide{
+    background: #f9f9f9;
+    .exp-title {
+      font-size: 28px;
+      color: #232323;
+      padding: 10px 0;
+      margin: 20px 0 60px 0;
+      text-transform: uppercase;
+      font-family: "Brandon Gratesque";
+    }
+    .we-provide-el{
+        text-align: center;
+        margin-bottom: 50px;
+        i{
+            font-size: 50px;
+        }
+        p{
+            margin: 10px 0;
+        }
+    }
+}
+.eu-col-xs-50{
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+}
+
+@media (min-width: 768px){
+    .eu-col-md-20{
+        float: left;
+        width: 20%;
+        padding: 0 15px;
+    }
 }
