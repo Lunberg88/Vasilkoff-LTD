@@ -291,7 +291,8 @@ header .navbar-collapse {
 
 .hp-top-head {
   padding: 10px 50px 0;
-  background: linear-gradient(60deg, $dark-red, $dark-red 50%, #95241A);
+  margin-top: 60px;
+  background: linear-gradient(60deg, #701b19, #8f2e2b 50%, #a63c39);
 
   .clearfix {
     padding-left: 0;
@@ -378,11 +379,12 @@ header .navbar-collapse {
       display: flex;
       flex-direction: column;
       font-weight: 400;
-      font-family: 'Brandon Gratesque';
+      /*font-family: 'Brandon Gratesque';*/
       line-height: 90px;
 
       .small-text {
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 60px;
       }
 
       .big-text {
@@ -392,7 +394,7 @@ header .navbar-collapse {
       }
 
       .link-btn {
-        padding-top: 45px;
+        /*padding-top: 45px;*/
         text-transform: uppercase;
         font-family: "Open Sans";
 
@@ -430,6 +432,7 @@ header .navbar-collapse {
     float: left;
     padding-top: 30px;
     margin-left: 0;
+    width: 73%;
   }
 }
 
@@ -868,10 +871,33 @@ header .navbar-collapse {
         font-size: 14px !important;
         padding: 0 20px !important;
     }
+    .carousel-caption {
+        right: 0%;
+        left: 0%;
+    }
 }
 @media (min-width: 992px) {
     .block-command.join .block-photo span{
         font-size: 24px !important;
         padding: 0 33px !important;
+    }
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .hp-portfolio {
+    .pf-box {
+      .pf-box-title {
+          font-size: 24px !important;
+      }
+    }
+  }
+}
+.filter{
+    margin-bottom: 30px;
+}
+.carousel-caption{
+    text-align: left;
+    padding-bottom: 0;
+    a{
+        text-shadow: none;
     }
 }
