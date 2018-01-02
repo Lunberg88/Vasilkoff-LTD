@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
 </head>
-<body class="main">
+<body class="main blog">
 <div class="wrapper">
 
 <header>
@@ -41,9 +41,9 @@
                         <li><a href="#portfolio">portfolio</a></li>
                         <li><a href="#blog" class="active">blog</a></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
+                    <!--<ul class="nav navbar-nav navbar-right">
                         <li><a href="#contact">contact us</a></li>
-                    </ul>
+                    </ul>-->
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
@@ -55,7 +55,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-sm-push-4">
                 <div class="exp-logo-txt" align="center">
-                    expertise
+                    blog
                 </div>
             </div>
         </div>
@@ -67,8 +67,9 @@
             <div class="col-xs-12 col-sm-12">
                 <div class="breadcrumbs">
                     <ul>
-                        <li><a href="homepage.html">Home page</a> <i class="fa fa-caret-right" aria-hidden="true"></i></li>
-                        <li>Expertise</li>
+                        <li><a href="homepage.html"><i class="icon-arrow"></i><span class="black">COME BACK</span></a> /</li>
+                        <li><a href="homepage.html">Home page</a> /</li>
+                        <li>Blog</li>
                     </ul>
                 </div>
             </div>
@@ -79,6 +80,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-9 col-md-10">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="pf-nav-btns">
+                            <button class="btn btn-default filter-button actives" data-filter="all">All</button>
+                            <button class="btn btn-default filter-button" data-filter="mobapp">Mobile application</button>
+                            <button class="btn btn-default filter-button" data-filter="design">Design</button>
+                            <button class="btn btn-default filter-button" data-filter="webdev">Web development</button>
+                            <button class="btn btn-default filter-button" data-filter="blockchain">Blockchain applications</button>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-md-4">
                             <div class="blog-news-body">
@@ -128,10 +138,20 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-6">
-                            <div class="news-center-block-left"></div>
+                            <div class="news-center-block-left">
+                                <div class="news-block-wrap">
+                                    <i class="icon-keyboard"></i>
+                                    <div>How to become a good for the front developer</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6">
-                            <div class="news-center-block-right"></div>
+                            <div class="news-center-block-right">
+                                <div class="news-block-wrap">
+                                    <i class="icon-keyboard"></i>
+                                    <div>How to become a good for the front developer</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -179,10 +199,37 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="new-pagination">
+                                <a href="?more">show all <img src="assets/img/Shape.png" alt="Show more"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="blog-nav-tags">
+                            <button class="btn btn-default filter-button actives" data-filter="all">All</button>
+                            <button class="btn btn-default filter-button" data-filter="mobapp">iOS development</button>
+                            <button class="btn btn-default filter-button" data-filter="design">News</button>
+                            <button class="btn btn-default filter-button" data-filter="webdev">G+ apps development</button>
+                            <button class="btn btn-default filter-button" data-filter="blockchain">Android development</button>
+                            <button class="btn btn-default filter-button" data-filter="blockchain">Programmer's notes</button>
+                            <button class="btn btn-default filter-button" data-filter="blockchain">Time management</button>
+                            <button class="btn btn-default filter-button" data-filter="blockchain">Creative Figures</button>
+                            <button class="btn btn-default filter-button" data-filter="blockchain">Android development</button>
+                            <button class="btn btn-default filter-button" data-filter="blockchain">Programmer's notes</button>
+                            <button class="btn btn-default filter-button" data-filter="blockchain">Time management</button>
+                            <button class="btn btn-default filter-button" data-filter="blockchain">Creative Figures</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-3 col-md-2">
+                    <div class="blog-search">
+                        <input type="text" name="s">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
                     <div class="news-recent-posts">
                         <div class="recent-posts-title">
                             recent posts
@@ -211,53 +258,14 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-12">
-                    <div class="new-pagination">
-                        <a href="?more">show all <img src="assets/img/Shape.png" alt="Show more"></a>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
-<section class="hp-feedback">
-    <div class="container">
-        <div class="row">
-            <div class="xol-xs-12 col-sm-6">
-                <span class="exp-title pull-left">callback request</span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-sm-push-3">
-                <div class="req-formbox">
-                    <form action="#" class="frm-box">
-                        <input type="text" class="frm-input" placeholder="Your project">
-                        <input type="email" class="frm-input" placeholder="Your Email">
-                        <input type="text" class="frm-input" placeholder="Your Message">
-                        <a href="#" class="frm-btn">Submit</a>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="foot-box left-box">
-                    <div class="foot-title">Social</div>
-                    <div class="social fa-social">
-                        <a href="#" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#" title="google plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="foot-copyrights">
-                        &copy; 2012-2016 Vasilkoff LTD - All Rights Reserved
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4">
+
+            <div class="col-xs-12 col-sm-3 col-md-3">
                 <div class="foot-box">
                     <span class="foot-title">Expertise</span>
                     <div class="social">
@@ -284,13 +292,43 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="foot-box left-box">
+                    <div class="foot-title">Social</div>
+                    <div class="social fa-social">
+                        <p><i class="fa fa-map-marker list-icon" aria-hidden="true"></i> <a href="#">Paphos Cyprus</a></p>
+                        <p><i class="fa fa-phone list-icon" aria-hidden="true"></i> <a href="#">+35796253566</a></p>
+                        <p><i class="fa fa-envelope list-icon" aria-hidden="true"></i> <a href="mailto:maxim.vasilkoff@gmail.com">maxim.vasilkoff@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
                 <div class="foot-box">
                     <span class="foot-title">Contact us</span>
                     <div class="foot-contacts">
-                        <a href="mailto:maxim.vasilkoff@gmail.com">maxim.vasilkoff@gmail.com</a>
+                        <form action="#" class="frm-box">
+                            <div class="col-xs-12 col-sm-6"><input type="text" placeholder="Your Name"></div>
+                            <div class="col-xs-12 col-sm-6"><input type="email" placeholder="Your Email"></div>
+                            <div class="col-xs-12"><input type="tel" placeholder="Phone"></div>
+                            <div class="col-xs-12"><textarea rows="4" placeholder="Your Message"></textarea></div>
+                            <div class="col-xs-12"><button type="submit">Submit</button></div>
+                        </form>
+                        <div class="clearfix"></div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot-copyrights">
+        <div class="container">
+            <div class="copyright-text">&copy; Copyright 2012-2016 Vasilkoff LTD - All Rights Reserved</div>
+            <div class="copyright-social">
+                <ul>
+                    <a href="#"><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
+                    <a href="#"><li><i class="fa fa-twitter" aria-hidden="true"></i></li></a>
+                    <a href="#"><li><i class="fa fa-google-plus" aria-hidden="true"></i></li></a>
+                    <a href="#"><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
+                </ul>
             </div>
         </div>
     </div>

@@ -60,21 +60,16 @@
       height: 240px;
 
       .foot-copyrights {
-        color: #5b5b5b;
-        font-size: 14px;
-        vertical-align: bottom;
-        position: absolute;
-        left: 0%;
-        bottom: 0%;
+
       }
     }
     .foot-box {
       margin: auto !important;
-      padding-left: 60px !important;
+      /*padding-left: 60px !important;*/
     }
 
     .foot-box:last-child {
-      padding-left: 100px !important;
+      /*padding-left: 100px !important;*/
     }
   }
 }
@@ -82,28 +77,55 @@
 .navbar-default {
   background-color: #fff !important;
   padding: 5px 0;
+  box-shadow: 0 3px 3px rgba(153, 153, 153, 0.5);
 }
 
 .footer {
-  background: #0f0f0f;
+  background: #232323;
   color: #fff;
-  padding: 10px 50px;
-
+  padding: 20px 0px 0px 0px;
+  .list-icon{
+      margin-right: 10px;
+  }
   .foot-title {
-    font-size: 28px;
-    color: $dark-red;
+    font-size: 36px;
+    color: #ffffff;
     font-family: 'Brandon Gratesque';
     font-style: normal;
     font-weight: 400;
   }
 
   .foot-copyrights {
-    color: #5b5b5b;
-    font-size: 14px;
-    vertical-align: bottom;
+      color: #ffffff;
+      font-size: 15px;
+      background: #862218;
+      font-weight: 100;
+  }
+  .copyright-text{
+    margin-top: 18px;
+    float: left;
+  }
+  .copyright-social{
+      display: inline-block;
+      float: right;
+      ul{
+          list-style: none;
+          padding: 0;
+          margin: 12px 0 12px 0;
+          li{
+              display: inline-block;
+              font-size: 21px;
+              background: #232323;
+              border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            text-align: center;
+            line-height: 27px;
+          }
+      }
   }
 
-  .social, .foot-contacts {
+  .social {
     margin: 15px 0;
 
     a, a:active, a:link, a:visited {
@@ -112,30 +134,60 @@
       padding-right: 10px;
       text-decoration: none;
       font-family: 'Open Sans';
+      font-weight: 100;
     }
     a:hover {
       color: #8c8c8c;
       text-decoration: none;
     }
+
+  }
+  .foot-contacts{
+      margin: 15px 0 40px 0;
+      [class^="col-"]{
+          padding: 4px;
+      }
+      input, textarea{
+        padding: 12px 17px;
+        font-size: 16px;
+        border: 0;
+        color: #232323;
+        outline: none;
+        width: 100%;
+      }
+      [type="submit"]{
+          padding: 10px 65px;
+            background: #862218;
+            border-radius: 60px;
+            color: #fff;
+            font-family: 'Brandon Gratesque Medium';
+            font-size: 15px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 0;
+            &:hover{
+                background: #b80000;
+            }
+      }
   }
 
   .fa-social {
     a, a:active, a:visited, .a:link {
-      font-size: 20px !important;
+      font-size: 15px !important;
     }
   }
 
   ul {
-    list-style: none;
-    margin-left: -45px;
-
+    /*list-style: none;*/
+    /*margin-left: -45px;*/
+    padding-left: 15px;
     li {
       font-size: 12px;
       color: #fff;
       padding: 5px 5px;
 
       a {
-        font-weight: normal;
+        font-weight: 100;
       }
     }
   }
@@ -212,7 +264,7 @@ header .navbar-collapse {
 @media screen and (min-width: 760px) and (max-width: 1200px) {
   .hp-portfolio {
     .pf-box {
-      padding-bottom: 105px;
+      /*padding-bottom: 105px;*/
     }
   }
 }
@@ -239,7 +291,8 @@ header .navbar-collapse {
 
 .hp-top-head {
   padding: 10px 50px 0;
-  background: linear-gradient(60deg, $dark-red, $dark-red 50%, #95241A);
+  margin-top: 60px;
+  background: linear-gradient(60deg, #701b19, #8f2e2b 50%, #a63c39);
 
   .clearfix {
     padding-left: 0;
@@ -326,11 +379,12 @@ header .navbar-collapse {
       display: flex;
       flex-direction: column;
       font-weight: 400;
-      font-family: 'Brandon Gratesque';
+      /*font-family: 'Brandon Gratesque';*/
       line-height: 90px;
 
       .small-text {
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 60px;
       }
 
       .big-text {
@@ -340,7 +394,7 @@ header .navbar-collapse {
       }
 
       .link-btn {
-        padding-top: 45px;
+        /*padding-top: 45px;*/
         text-transform: uppercase;
         font-family: "Open Sans";
 
@@ -378,6 +432,7 @@ header .navbar-collapse {
     float: left;
     padding-top: 30px;
     margin-left: 0;
+    width: 73%;
   }
 }
 
@@ -386,7 +441,7 @@ header .navbar-collapse {
 
   .exp-title {
     font-size: 28px;
-    color: #0f0f0f;
+    color: #232323;
     padding: 10px 0;
     text-transform: uppercase;
     font-family: "Brandon Gratesque";
@@ -472,25 +527,29 @@ header .navbar-collapse {
 
     .img-logo1, .img-sm {
       position: absolute;
-      width: 85%;
+      width: 63%;
       top: 35%;
-      left: 10%;
+      left: 21%;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
       z-index: 99;
     }
 
     .img-sm {
-      width: 160px !important;
-      left: 20% !important;
+      width: 50% !important;
+      left: 25% !important;
+      top: 20%;
     }
 
     .ehover12 {
       .img-responsive {
-        width: 380px;
-        height: 320px;
+        /*width: 380px;*/
+        height: 250px;
         filter: grayscale(100%);
         opacity: 0.7;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
       }
     }
 
@@ -525,7 +584,7 @@ header .navbar-collapse {
 
       .title-border {
         width: 90px;
-        height: 2px;
+        height: 4px;
         background: $dark-red;
         margin-top: 19px;
       }
@@ -594,6 +653,7 @@ header .navbar-collapse {
 
 .ehover12 {
   background: #646464;
+  position: relative;
 
   img {
     max-width: none;
@@ -645,5 +705,199 @@ header .navbar-collapse {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+  .box-text{
+      position: absolute;
+    bottom: 0;
+    padding: 15px;
+    color: #fff;
+    display: none;
+  }
+  &:hover .box-text{
+      display: block;
+  }
 }
-
+.exp-content {
+    &.we-team{
+        padding-bottom: 40px;
+        p{
+            font-size: 19px;
+            line-height: 30px;
+            strong{
+                font-weight: 600;
+            }
+        }
+    }
+    &.our-philosophy{
+        background: #f9f9f9;
+        padding-bottom: 60px;
+        .block{
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            .block-icon{
+                font-size: 70px;
+                color: #862218;
+            }
+            .block-title{
+                margin-top: 5px;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .block-text{
+                margin-top: 28px;
+                line-height: 22px;
+                font-size: 15px;
+            }
+        }
+    }
+    &.the-command{
+        .red{
+            color: #862218;
+        }
+        .command-wraper{
+            float: left;
+            overflow: hidden;
+            height: auto;
+        }
+        .show-all-panel{
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            .show-all-btn{
+                background: #862218;
+                color: #fff;
+                display: inline-block;
+                border-radius: 50%;
+                width: 70px;
+                height: 70px;
+                font-size: 34px;
+                line-height: 65px;
+                cursor: pointer;
+            }
+            .show-all-text{
+                color: #862218;
+                margin-top: 14px;
+                font-size: 16px;
+            }
+        }
+        .block-command{
+            padding: 15px 15px;
+            margin-bottom: 10px;
+            &.join .block-photo{
+                background: #862218;
+                position: relative;
+                cursor: pointer;
+                span{
+                    position: absolute;
+                    top: 35%;
+                    width: 100%;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 3vw;
+                    padding: 0 2vw;
+                }
+            }
+        }
+        .block-photo{
+            width: 90%;
+            padding-top: 90%;
+            margin: auto;
+            background-position: center center;
+            background-size: cover;
+            border: 3px solid #862218;
+            border-radius: 50%;
+            box-shadow: -5px 5px 30px rgba(102, 102, 102, 0.5);
+        }
+        .block-name{
+            color: #862218;
+            margin-top: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .block-post{
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+    .section-title{
+        font-size: 32px;
+        color: #232323;
+        padding: 10px 0;
+        margin: 10px 0 20px 0;
+        text-transform: uppercase;
+        font-family: "Brandon Gratesque";
+    }
+}
+.google-map{
+    position: relative;
+    height: 50vh;
+    min-height: 300px;
+    #map{
+        height: 100%;
+    }
+    .map-filter{
+        position: absolute;
+        top: -1vh;
+        left: 0;
+        height: 30vh;
+        width: 100%;
+        background: linear-gradient(white 15%, rgba(255, 255, 255, 0.4) 63%, rgba(255, 255, 255, 0));
+        z-index: 99;
+    }
+    .google-map-contacts{
+        bottom: 10vh;
+        top: auto;
+        left: 5vw;
+        background: #f9f9f9;
+        box-shadow: 0px 0px 10px rgba(102, 102, 102, 0.6);
+        .contact-info{
+            width: 80%;
+            margin: 25px auto !important;
+            .contact-title{
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 17px;
+                margin-bottom: 36px;
+            }
+            p{
+                line-height: 30px;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .block-command.join .block-photo span{
+        font-size: 14px !important;
+        padding: 0 20px !important;
+    }
+    .carousel-caption {
+        right: 0%;
+        left: 0%;
+    }
+}
+@media (min-width: 992px) {
+    .block-command.join .block-photo span{
+        font-size: 24px !important;
+        padding: 0 33px !important;
+    }
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .hp-portfolio {
+    .pf-box {
+      .pf-box-title {
+          font-size: 24px !important;
+      }
+    }
+  }
+}
+.filter{
+    margin-bottom: 30px;
+}
+.carousel-caption{
+    text-align: left;
+    padding-bottom: 0;
+    a{
+        text-shadow: none;
+    }
+}
