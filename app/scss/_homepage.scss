@@ -422,17 +422,18 @@ header .navbar-collapse {
 
 .hp-top-head .carousel .carousel-inner .item, .hp-top-head .carousel .carousel-inner .item .active {
   width: 100%;
-  height: 500px;
+  //height: 500px;
 }
 
 .hp-top-head .carousel .carousel-inner .item, .hp-top-head .carousel .carousel-inner .item .active {
   .head-logo {
     position: relative;
     left: 0;
-    float: left;
     padding-top: 30px;
     margin-left: 0;
-    width: 73%;
+    max-height: 460px;
+    float: right;
+    clear: both;
   }
 }
 
@@ -900,4 +901,18 @@ header .navbar-collapse {
     a{
         text-shadow: none;
     }
+}
+
+@media (max-width: 760px) {
+  .hp-top-head .carousel .carousel-inner .item, .hp-top-head .carousel .carousel-inner .item .active {
+    .head-logo {
+      position: relative;
+      left: 0;
+      padding-top: 30px;
+      margin-left: 0;
+      max-height: 210px;
+      float: right;
+      clear: both;
+    }
+  }
 }

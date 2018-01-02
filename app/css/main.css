@@ -82,6 +82,18 @@ body {
 img {
   max-width: 100%; }
 
+.blog-bg-header {
+  background: url("../assets/img/blog_bg_header.png") no-repeat !important;
+  background-color: #862218 !important; }
+
+.expertise-bg-header {
+  background: url("../assets/img/expertize_bg_header.png") no-repeat !important;
+  background-color: #862218 !important; }
+
+.portfolio-bg-header {
+  background: url("../assets/img/portfolio_bg_header.png") no-repeat !important;
+  background-color: #862218 !important; }
+
 @media (max-width: 415px) {
   .exp-top-head {
     background-position-x: -270px !important; }
@@ -354,16 +366,16 @@ header .navbar-collapse {
         color: red; }
 
 .hp-top-head .carousel .carousel-inner .item, .hp-top-head .carousel .carousel-inner .item .active {
-  width: 100%;
-  height: 500px; }
+  width: 100%; }
 
 .hp-top-head .carousel .carousel-inner .item .head-logo, .hp-top-head .carousel .carousel-inner .item .active .head-logo {
   position: relative;
   left: 0;
-  float: left;
   padding-top: 30px;
   margin-left: 0;
-  width: 73%; }
+  max-height: 460px;
+  float: right;
+  clear: both; }
 
 .hp-expertise, .hp-portfolio, .hp-feedback {
   margin-top: 45px; }
@@ -718,6 +730,16 @@ header .navbar-collapse {
   .carousel-caption a {
     text-shadow: none; }
 
+@media (max-width: 760px) {
+  .hp-top-head .carousel .carousel-inner .item .head-logo, .hp-top-head .carousel .carousel-inner .item .active .head-logo {
+    position: relative;
+    left: 0;
+    padding-top: 30px;
+    margin-left: 0;
+    max-height: 210px;
+    float: right;
+    clear: both; } }
+
 .exp-top-head {
   background: url("../assets/img/expertise-logo.png") no-repeat;
   background-size: cover;
@@ -735,7 +757,8 @@ header .navbar-collapse {
     align-items: center;
     justify-content: center;
     height: 320px;
-    margin: auto; }
+    margin: auto;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8); }
 
 .exp-about {
   background: #f9f9f9; }

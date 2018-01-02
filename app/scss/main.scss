@@ -100,6 +100,19 @@ img {
   max-width: 100%;
 }
 
+.blog-bg-header {
+  background: url('../assets/img/blog_bg_header.png') no-repeat !important;
+  background-color: #862218 !important;
+}
+.expertise-bg-header {
+  background: url('../assets/img/expertize_bg_header.png') no-repeat !important;
+  background-color: #862218 !important;
+}
+.portfolio-bg-header {
+  background: url('../assets/img/portfolio_bg_header.png') no-repeat !important;
+  background-color: #862218 !important;
+}
+
 @import "vars";
 @import "homepage";
 @import "fonts";
