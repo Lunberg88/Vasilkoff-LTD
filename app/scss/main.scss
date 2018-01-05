@@ -102,15 +102,37 @@ img {
 
 .blog-bg-header {
   background: url('../assets/img/blog_bg_header.png') no-repeat !important;
-  background-color: #862218 !important;
+  background-size: cover !important;
 }
 .expertise-bg-header {
   background: url('../assets/img/expertize_bg_header.png') no-repeat !important;
-  background-color: #862218 !important;
+  background-size: cover !important;
 }
 .portfolio-bg-header {
   background: url('../assets/img/portfolio_bg_header.png') no-repeat !important;
-  background-color: #862218 !important;
+  background-size: cover !important;
+}
+
+@media (max-width: 1023px) {
+  .exp-top-head .exp-logo-txt {
+    height: auto !important;
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .hp-top-head .top-head-box .head-text {
+    padding-top: 0 !important;
+  }
+  .carousel-indicators {
+    list-style-type: square;
+    bottom: -13px;
+  }
+  .carousel-indicators li, .carousel-indicators .active {
+    height: 5px;
+    border-radius: 0;
+    margin: 1px;
+  }
 }
 
 @import "vars";
@@ -123,3 +145,38 @@ img {
 @import "product";
 @import "blog";
 @import "mediaquery";
+@import "mobile-gird";
+
+@media (max-width: 768px) {
+  .hp-top-head .top-head-box .head-text {
+    line-height: 0 !important;
+  }
+  .hp-top-head .top-head-box .head-text .small-text {
+    font-size: 14px;
+    margin: 15px 0;
+    line-height: 0;
+  }
+  .hp-top-head .top-head-box .head-text .big-text {
+    font-size: 21px;
+    line-height: 1.5 !important;
+  }
+  .hp-top-head .carousel .carousel-inner .item .head-logo,
+  .hp-top-head .carousel .carousel-inner .item .active .head-logo {
+    max-height: 400px !important;
+    float: none !important;
+    //padding-top: 0 !important;
+  }
+  .hp-top-head .top-head-box .head-text .link-btn a,
+  .hp-top-head .top-head-box .head-text .link-btn a:active,
+  .hp-top-head .top-head-box .head-text .link-btn a:link,
+  .hp-top-head .top-head-box .head-text .link-btn a:visited {
+    font-size: 12px !important;
+    padding: 4px 15px !important;
+  }
+  .hp-top-head .top-head-box .head-text .link-btn a img,
+  .hp-top-head .top-head-box .head-text .link-btn a:active img,
+  .hp-top-head .top-head-box .head-text .link-btn a:link img,
+  .hp-top-head .top-head-box .head-text .link-btn a:visited img {
+    padding-left: 5px !important;
+  }
+}
