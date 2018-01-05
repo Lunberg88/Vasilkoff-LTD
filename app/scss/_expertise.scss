@@ -64,12 +64,10 @@
 
 .exp-content {
   margin-top: 3px;
-  //padding: 30px 50px;
 
 
   .exp-box {
-    margin: 40px auto;
-    //width: 76%;
+    margin: 20px auto;
 
     ul {
       li {
@@ -96,6 +94,10 @@
       margin: -20px;
       h3 {
         padding-left: 20px;
+        line-height: 0.4;
+      }
+      ul {
+        padding-top: 15px;
       }
     }
 
